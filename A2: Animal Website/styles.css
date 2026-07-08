@@ -4,16 +4,22 @@ html {
     margin-right: 50px;
 }
 
-h1{
+
+h1, h2 {
     text-align: center;
     color: rgb(54, 54, 132);
 }
 
-h2, h3 {
+h1{
+    padding-top: 65px;
+}
+
+h3 {
     color: rgb(54, 54, 132);
 }
 
 a {
+    /* text-align: center; */
     color: rgb(15, 95, 15);
 }
 
@@ -29,6 +35,18 @@ a:active {
     color: purple;
 }
 
+.clickable {
+    text-align: center;
+    background-color: rgb(232, 255, 232);
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.clickable:hover {
+    background-color: rgb(196, 235, 196); 
+}
+
 img {
     border-radius: 20px;
     border: 5px solid rgb(138, 205, 138); 
@@ -41,6 +59,9 @@ ul {
 nav {
     display: flex;
     align-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 nav ul{
@@ -59,4 +80,38 @@ nav ul{
 
 nav a {
     text-decoration: none;
+    padding: 10px 5px;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lists div {
+    background-color: rgb(232, 255, 232);
+    padding: 10px 30px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.vert-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.vert-lists .list-component {
+    background-color: rgb(232, 255, 232);
+    padding: 10px 30px;
+    width: 1100px;
+    border-radius: 20px;
+}
+
+.vert-lists ol {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
