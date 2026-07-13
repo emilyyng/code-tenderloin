@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 35px; */
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgb(255, 224, 229);
+    padding: 20px;
+    width: 40vw;
+    border-radius: 20px;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    
+}
